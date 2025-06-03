@@ -44,7 +44,7 @@ The backend ingests the simulated data, stores it in a database, and provides AP
 git clone https://github.com/SaieshSharma/force-hackkronyx.git
 cd force-hackkronyx
 
-## ✅ Backend Setup
+### ✅ Backend Setup
 
 ### Navigate to the server directory:
 ```bash
@@ -92,29 +92,66 @@ npm run dev
 The frontend should now be running on **http://localhost:5173** (or as specified).
 
 
-## Prerequisites
-Before running these codes, install the required dependencies.
+### ✅ Python Simulator Setup
 
-### Install Python
-1. Download and install Python (version 3.8 or later) from the official website: [Python Downloads](https://www.python.org/downloads/)
-2. During installation, check the box *"Add Python to PATH"*.
+#### Prerequisites
+Before running the simulator, make sure you have Python installed and the necessary dependencies.
 
-### Install Dependencies
-Run the following command in your terminal or command prompt:
-bash
-pip install ultralytics opencv-python numpy matplotlib supervision google-generativeai
+1. **Install Python**
+   - Download and install Python (version 3.8 or later) from [Python Downloads](https://www.python.org/downloads/)
+   - During installation, check the box **"Add Python to PATH"**
 
-🔍 Key Features
-Live sensor simulation with configurable delays
-Real-time dashboard with live charts and warnings
-Machine failure tracking
-Torque, Temperature, Wear, Speed, Power visualization
-Scalable architecture for multi-machine support
+2. **Install Dependencies**
+   ```bash
+   pip install ultralytics opencv-python numpy matplotlib supervision google-generativeai pandas requests
+   ```
 
-🧠 Future Improvements
-Kafka-based message queuing for production-scale ingestion
-ML-based failure prediction from historical data
-Role-based access control for factory operators
-Notification system (SMS/Email alerts)
+3. **Run the Simulator**
+   ```bash
+   cd machine-stream-simulator
+   python main.py
+   ```
 
+The simulator will start generating and sending machine sensor data to your backend server. Ensure that your backend server is running before starting the simulator.
 
+---
+
+## 🔍 Key Features
+
+- Live sensor simulation with configurable delays
+- Real-time dashboard with live charts and warnings
+- Machine failure tracking
+- Torque, Temperature, Wear, Speed, Power visualization
+- Scalable architecture for multi-machine support
+
+---
+
+## 🧠 Future Improvements
+
+- Kafka-based message queuing for production-scale ingestion
+- ML-based failure prediction from historical data
+- Role-based access control for factory operators
+- Notification system (SMS/Email alerts)
+- Mobile application for on-the-go monitoring
+
+---
+
+## 📝 Troubleshooting
+
+If you encounter any issues:
+
+1. Ensure all servers (backend, frontend, and simulator) are running simultaneously
+2. Check that the correct ports are being used and not blocked by firewall
+3. Verify that all dependencies are properly installed
+4. Check the console logs for specific error messages
+
+---
+
+## 👥 Contributors
+
+HIMANSHU MISHRA
+SAIESH SHARMA
+ANURAG MISHRA
+SULABH AMBULE
+
+---
