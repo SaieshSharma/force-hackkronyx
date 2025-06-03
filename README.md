@@ -42,7 +42,7 @@ The backend ingests the simulated data, stores it in a database, and provides AP
 
 ```bash
 git clone https://github.com/SaieshSharma/force-hackkronyx.git
-cdforce-hackkronyx
+cd force-hackkronyx
 
 ## ✅ Backend Setup
 
