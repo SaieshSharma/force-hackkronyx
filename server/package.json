@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "main": "server.js",
   "type": "module",
-  "scripts": {
-    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
-  },
+ "scripts": {
+  "dev": "concurrently \"npm run dev:server\" \"npm run dev:simulator\"",
+  "dev:server": "nodemon -r dotenv/config --experimental-json-modules src/index.js",
+  "dev:simulator": "python3 simulator/main.py"
+},
+
   "keywords": [
     "MongoDB",
     "backend",
@@ -15,6 +18,7 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "concurrently": "^9.1.2",
     "nodemon": "^3.1.9",
     "prettier": "^3.4.2"
   },
