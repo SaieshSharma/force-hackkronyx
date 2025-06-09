@@ -1,10 +1,11 @@
 # 🚀 Project Setup Guide
 # 🛠️ Predictive Maintenance MVP for Manufacturing Units
 
+# Team Force
 This project is a working MVP for detecting **unplanned machine downtime** in **mid-sized manufacturing units** using real-time sensor data, predictive analytics, and a clean dashboard interface.
 
-> ✅ **Deployed Version**: [LIVE DEMO LINK HERE] https://force-hackronyx-mvp-frontend.vercel.app/  
-> _(Replace this with the actual deployed link once available)_
+> ✅ **Deployed Version**: https://force-hackronyx-mvp-frontend.vercel.app/  
+
 
 ---
 
