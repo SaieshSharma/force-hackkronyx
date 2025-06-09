@@ -44,8 +44,26 @@ The backend ingests the simulated data, stores it in a database, and provides AP
 ```bash
 git clone https://github.com/SaieshSharma/force-hackkronyx.git
 cd force-hackkronyx
+```
 
 ### ✅ Backend Setup
+
+### Create a .env file in the server folder and add the following code
+```bash
+PORT=5000
+
+MONGODB_URI=mongodb+srv://dbUser:dbUserPassword@msme-downtime-dev.gue6vac.mongodb.net/?retryWrites=true&w=majority&appName=msme-downtime-dev
+CORS_ORIGIN =*
+NODE_ENV=development
+
+ACCESS_TOKEN_EXPIRY=1d
+REFRESH_TOKEN_EXPIRY =10d
+
+const crypto = require('crypto');
+
+const ACCESS_TOKEN_SECRET = crypto.randomBytes(64).toString('hex');
+const REFRESH_TOKEN_SECRET = crypto.randomBytes(64).toString('hex');
+```
 
 ### Navigate to the server directory:
 ```bash
